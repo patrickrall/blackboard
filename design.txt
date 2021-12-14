@@ -1,0 +1,53 @@
+
+Nicer blackboard:
+    Tech actually sends canvas data
+    Render text+mathjax into canvas?
+    iPad compat
+
+    New features:
+        Minimap? = Discrete zooming?
+        
+        More robust peer matching system?
+        Maybe each user has just one big blackboard for all their work.
+
+        Some non-euclidian space stuff?
+
+    patrickrall.com/blackboard/?wordoftheday
+        If you go in without 'wordoftheday', it will pick a random word for you, and claim it.
+        if 'wordoftheday' has not yet been registered, claim it yourself
+        host/client mechanic has nothing to do with data stored, just with how users connect
+        and even then, they don't really notice.
+
+    
+    Data:
+        Each user has several blackboards
+            Data is saved to file. 
+                That solves the 'ownership' problem.
+            Maybe a PNG?
+            But PNG means you have to store the empty spaces too...
+
+        Multiple files on a single screen:
+            Idea: each user can 'drop a pin' that saves the data
+                each user can do this independently
+                what regions are saved to what pin?
+
+        When you click save:
+            "Done" + "cancel" button appears, switching to other tools disallowed
+            you click several points, and it automatically loads non-empty
+                chunks adjacent to that point into the save
+                visual cue to tell you what chunks you are saving + have already saved
+            when you click done, it downloads a file containing those chunks
+
+        When you click load:
+            It says "3 pieces left" + a "cancel" button, switching to other tools disallowed
+            You can click at a point and it will place the chunks there
+                Visual cues tell you there is not enough space.
+                Maybe an outline of the chunks to be placed.
+
+    Textbox:
+        Editable textbox appears at the bottom near toolbar.
+        The text in the document changes as you edit it.
+        Actually gets rendered into the canvas.
+
+
+
